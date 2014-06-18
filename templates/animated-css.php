@@ -1,8 +1,8 @@
 <?php header("Content-type: text/css; charset: UTF-8"); ?> 
-<?php
+<?php 
 $absolute_path = __FILE__;
-$path_to_file = explode( 'wp-content', $absolute_path );
-$path_to_wp = $path_to_file[0];
+$path_to_file = explode( 'data', $absolute_path );
+$path_to_wp = $path_to_file[0] . "repo/php";
 require_once( $path_to_wp.'/wp-load.php' );
 
 $pp_advance_combine_css = get_option('pp_advance_combine_css');
