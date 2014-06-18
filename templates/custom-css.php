@@ -5,7 +5,7 @@ print $test_path;
 ?>
 <?php 
 $absolute_path = __FILE__;
-$path_to_file = explode( 'app-root', $absolute_path );
+$path_to_file = explode( 'data', $absolute_path );
 $path_to_wp = $path_to_file[0] . "repo/php";
 print $path_to_wp;
 require_once( $path_to_wp.'/wp-load.php' );
