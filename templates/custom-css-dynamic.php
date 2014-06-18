@@ -95,7 +95,7 @@ body.js_nav #wrapper, body.js_nav .footer_wrapper
 ?>
 
 <?php
-	$rigelstyle = 10;
+	$rigelstyle = 1;
 	//Get style value from query
 	if(isset($_GET['rigelstyle']) && is_numeric($_GET['rigelstyle']) &&  1 <= $_GET['rigelstyle'] && $_GET['rigelstyle'] <= 15)
 	{
@@ -109,7 +109,7 @@ body.js_nav #wrapper, body.js_nav .footer_wrapper
 	}
 	else
 	{
-		$import_options_json = file_get_contents(get_template_directory().'/cache/styles/style10.json');
+		$import_options_json = file_get_contents(get_template_directory().'/cache/styles/style1.json');
 		$import_options_arr = json_decode($import_options_json, true);
 	}
 ?>
