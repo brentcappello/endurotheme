@@ -1,5 +1,9 @@
 <?php header("Content-type: text/css; charset: UTF-8"); ?> 
 <?php 
+$test_path = __FILE__;
+print $test_path;
+?>
+<?php 
 $absolute_path = __FILE__;
 $path_to_file = explode( 'wp-content', $absolute_path );
 $path_to_wp = $path_to_file[0];
