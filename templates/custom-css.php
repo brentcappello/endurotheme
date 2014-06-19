@@ -319,7 +319,7 @@ h2.breaking { color:<?php echo $pp_top_bar_breaking_header_font_color; ?>; }
 <?php
 	$pp_menu_bg = get_option('pp_menu_bg');
 	
-	if(!empty($pp_menu_bg))
+		if($pp_menu_width != 'fixed_width')
 	{
 ?>
 .menu-secondary-menu-container, .menu-secondary-menu-container.fixed { background:<?php echo $pp_menu_bg; ?>; }
